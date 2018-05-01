@@ -2,7 +2,7 @@
 title: "Introduction"
 ---
 
-**Is there a correation between murder rate by precinct and the number of frisks the following year?**
+**Is there a correlation between murder rate by precinct and the number of frisks the following year?**
 
 New York City in previous years became a hotspot for the Police practice called, "Stop, Question, and Frisk". This was a controversial law enforcement practice due to the high percentage of minority races being the target of these endeavors. 
 

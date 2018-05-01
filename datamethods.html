@@ -233,40 +233,40 @@ $(document).ready(function () {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Asian/Pacific Islander</td>
+<td>Asian/Pacific Islander (1)</td>
 <td>3.5%</td>
 </tr>
 <tr class="even">
-<td>Black</td>
+<td>Black (2)</td>
 <td>51.1%</td>
 </tr>
 <tr class="odd">
-<td>American Indian/Alaskan Native</td>
+<td>American Indian/Alaskan Native (3)</td>
 <td>&gt; 1%</td>
 </tr>
 <tr class="even">
-<td>P- Black-hispanic</td>
+<td>P- Black-hispanic (4)</td>
 <td>7.1%</td>
 </tr>
 <tr class="odd">
-<td>Q- White-hispanic</td>
+<td>Q- White-hispanic (5)</td>
 <td>25.6%</td>
 </tr>
 <tr class="even">
-<td>X (Unknown)</td>
+<td>X (Unknown) (6)</td>
 <td>&gt; 1%</td>
 </tr>
 <tr class="odd">
-<td>White</td>
+<td>White (7)</td>
 <td>9%</td>
 </tr>
 <tr class="even">
-<td>Z(Other)</td>
+<td>Z(Other) (8)</td>
 <td>2.4%</td>
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>barplot(RacePlot, main = &quot;Race Break Down&quot;, xlab = &quot;Race&quot;, ylab = &quot;Percentage&quot;)</code></pre>
+<pre class="r"><code>barplot(RacePlot, names.arg = Racenames, main = &quot;Race Break Down&quot;, xlab = &quot;Race&quot;, ylab = &quot;Percentage&quot;)</code></pre>
 <p><img src="datamethods_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p><strong>Overall Sex Breakdown</strong></p>
 <table>
@@ -278,20 +278,20 @@ $(document).ready(function () {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Male</td>
+<td>Male (1)</td>
 <td>91.1%</td>
 </tr>
 <tr class="even">
-<td>Female</td>
+<td>Female (2)</td>
 <td>6.8%</td>
 </tr>
 <tr class="odd">
-<td>Z(Other)</td>
+<td>Z(Other) (3)</td>
 <td>1.8%</td>
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>barplot(SexPlot, main = &quot;Sex Break Down&quot;, xlab = &quot;Sex&quot;, ylab = &quot;Percentage&quot;)</code></pre>
+<pre class="r"><code>barplot(SexPlot, names.arg = Sexnames, main = &quot;Sex Break Down&quot;, xlab = &quot;Sex&quot;, ylab = &quot;Percentage&quot;)</code></pre>
 <p><img src="datamethods_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p><strong>Overall Frisked Breakdown</strong></p>
 <table>
@@ -303,16 +303,16 @@ $(document).ready(function () {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Yes</td>
+<td>Yes (1)</td>
 <td>55.7%</td>
 </tr>
 <tr class="even">
-<td>No</td>
+<td>No (2)</td>
 <td>44.3%</td>
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>barplot(FriskedPlot, main = &quot;Frisked Break Down&quot;, xlab = &quot;Frisked&quot;, ylab = &quot;Percentage&quot;)</code></pre>
+<pre class="r"><code>barplot(FriskedPlot, names.arg = Friskednames, main = &quot;Frisked Break Down&quot;, xlab = &quot;Frisked&quot;, ylab = &quot;Percentage&quot;)</code></pre>
 <p><img src="datamethods_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p>Variables Race, Sex, and Frisked by pct,</p>
 <p><strong>Race by Precinct</strong></p>

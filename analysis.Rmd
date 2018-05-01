@@ -1,0 +1,6 @@
+---
+title: "Analysis of the data"
+---
+
+The units of analysis for this dataset are by Borough. The Boroughs are the overarching metropolitan areas including specific precincts.  
+
