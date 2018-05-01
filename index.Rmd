@@ -1,0 +1,32 @@
+---
+title: "Introduction"
+---
+
+**Is there a correation between murder rate by precinct and the number of frisks the following year?**
+
+New York City in previous years became a hotspot for the Police practice called, "Stop, Question, and Frisk". This was a controversial law enforcement practice due to the high percentage of minority races being the target of these endeavors. 
+
+Blacks made up approximately 51.1% of the population considered in this dataset. Young men were also disproportionately targeted. Men overall made up 91.4% of the population in New York City that were part of this dataset just in the year of 2011.
+
+Controversial law enforcement pactices create public unrest alongside public distrust in the communities which are targeted. Murder rates in New York City vary greater throughout the ~~~ but there are extremely high rates in a select few precincts which promote question of the community which those precincts cover. Seeing if there is a correlation between murder rates in these particular areas within a precinct and the magnitude alongside the demographics of individuals stopped, questioned, and frisked, is a good start to observing an association of racial discrimination by police officers.  
+
+**Hypotheses**
+
+H0: There will be no indication of murder rates predicting the magnitiude of stop, question, and frisks by Law Enforcement Precincts.
+
+H1: Historically Black/minority classified neighbors (precinct) will have a higher number of stop, question, and frisks. 
+
+H2: Murder rates from the year 2010 by precinct will be correlated with the number of stop, question, and frisks in the precinct. This means that the higher than murder report for the year 2010 in a precinct, will essentially show a higher quatity of stop, question, and frisks in that precinct. 
+
+**Link for the 2011 file for variables in relation to the Stop-question-frisk analysis** 
+
+http://www1.nyc.gov/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2011-csv.zip 
+
+**Link for murder rates in New York City** 
+
+Citywide Non-Seven Major Felony Offenses 2000-2017 [PDF - Excel]
+
+*Avialable on, http://www1.nyc.gov/site/nypd/stats/crime-statistics/historical.page
+
+
+

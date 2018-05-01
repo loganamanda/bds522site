@@ -1,0 +1,107 @@
+---
+title: "Data and Methods"
+---
+
+The source of the following data analysis is from New York City crime dataset available online. The data used specifically is Murder rates by precinct in the year of 2010. The data for all other vairables analyzed is for the year 2011. The data below is broken down by variable for the overall year. The variables chosen to compare to the murder rates were chosen selectively 
+
+Variable analyzed from the year 2010, 
+
+**Overall Murder rates**
+
+```{r}
+barplot(MurderRates2010ALLPCT, main = "Murder Rates 2010 All Precincts", xlab = "Murder by Precinct", ylab = "Magnitude of Murder")
+```
+
+Variables analyzed from the year 2011 are as follows, 
+
+* Frisked (Y/N)*
+* Sex (M/F/Z)*
+* Race (Asian, Black, White, etc.)*
+* Age 
+
+
+Below is the r code for each variable tested in correlation with murder rates. 
+
+**Overall Age Data**
+
+```{r}
+summary(age)
+```
+
+
+
+**Overall Race Breakdown**
+
+Race                                     |  Percentage 
+---------                                | -----------
+Asian/Pacific Islander                   | 3.5% 
+Black                                    | 51.1%
+American Indian/Alaskan Native           | > 1% 
+P- Black-hispanic                        | 7.1%
+Q- White-hispanic                        | 25.6%
+X (Unknown)                              | > 1%
+White                                    | 9% 
+Z(Other)                                 | 2.4%
+
+```{r}
+barplot(RacePlot, main = "Race Break Down", xlab = "Race", ylab = "Percentage")
+``` 
+
+
+**Overall Sex Breakdown**
+
+Sex           |  Percentage
+-----         | -----------
+Male          | 91.1% 
+Female        | 6.8%
+Z(Other)      | 1.8% 
+
+```{r}
+barplot(SexPlot, main = "Sex Break Down", xlab = "Sex", ylab = "Percentage")
+```
+
+
+**Overall Frisked Breakdown**
+
+Frisked   |  Percentage
+-----     | -----------
+Yes       | 55.7% 
+No        | 44.3%
+
+```{r}
+barplot(FriskedPlot, main = "Frisked Break Down", xlab = "Frisked", ylab = "Percentage")
+```
+
+
+Variables Race, Sex, and Frisked by pct, 
+
+**Race by Precinct**
+
+Black and White races were analyzed for the purposes of this data description alongside the hypothesis,
+
+```{r}
+table(race,pct)
+```
+
+
+**Sex by Precinct** 
+
+```{r}
+table(sex,pct)
+```
+
+
+**Frisked by Precinct** 
+
+```{r}
+table(frisked,pct)
+```
+
+The data posted below is each varibale by New York City Police Precinct.
+
+*KEY: 
+
+* Frisked: Y-yes; N-no
+* Sex: M-male; F-female; Z- Not available 
+* Race: A- Asian; B- Black; I- Indian; P- ; Q- ; U- ; W- White; Z- Not avialable
+* Age: By number 

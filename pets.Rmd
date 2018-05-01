@@ -1,0 +1,28 @@
+---
+  title: "Pets"
+---
+  
+  I love my dogs Callie and Luna.
+
+Description of my pets, 
+
+* Callie is a 6 year old yellow lab
+* Luna is 1 year old black lab 
+* They both have brown eyes 
+* Luna is more of a lunatic
+* Callie is a loving, cuddly dog
+
+My dogs favorite things to do,
+
+1. Eat all the food they can have 
+2. Go on long walks
+3. Sun bathe on a cool day in the front yard
+
+Dogs
+
+Callie       |  Luna 
+---------    | ---------
+Calm         | Spazy 
+Loving       | Likes to be alone
+Gives kisses | Will kiss every once and a while or when she smells food 
+Lap dog      | Enjoys annoying Callie whenever possible

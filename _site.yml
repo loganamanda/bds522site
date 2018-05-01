@@ -1,0 +1,20 @@
+name: "MurderCorrelation"
+output_dir: "."
+navbar:
+  title: "Murder Correlation?"
+  left:
+    - text: "Introduction"
+      href: index.html
+    - text: "Data & Methods"
+      href: datamethods.html
+    - text: "Analysis"
+      href: analysis.html
+    - text: "Discussion & Conclusion"
+      href: discussionconclusion.html 
+      
+output: 
+  html_document: 
+    theme: cosmo
+    
+
+  
