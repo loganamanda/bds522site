@@ -4,6 +4,10 @@ title: "Introduction"
 
 **Is there a correlation between murder rate by precinct and the number of frisks the following year?**
 
+Police violence has been around for years but it became extremely popular in the media after the Freguson Riots in 2014, beginning August 9th and ending on the 25th of August. The riots occurred in Ferguson, Missouri  the day after a white police officer, Darren Wilson, fatally shot Michael Brown on August 9th, 2014. 321 members of the public were arrested during and after the unruly protests and riots while 10 persons were injured along with 6 police officers. 
+
+After the riots and media coverage, light was shed often on police volience against minorities (mainly African Americans) being so prominent throughout America. 
+
 New York City in previous years became a hotspot for the Police practice called, "Stop, Question, and Frisk". This was a controversial law enforcement practice due to the high percentage of minority races being the target of these endeavors. 
 
 Blacks made up approximately 51.1% of the population considered in this dataset. Young men were also disproportionately targeted. Men overall made up 91.4% of the population in New York City that were part of this dataset just in the year of 2011.
@@ -17,6 +21,12 @@ H0: There will be no indication of murder rates predicting the magnitiude of sto
 H1: Historically Black/minority classified neighbors (precinct) will have a higher number of stop, question, and frisks. 
 
 H2: Murder rates from the year 2010 by precinct will be correlated with the number of stop, question, and frisks in the precinct. This means that the higher than murder report for the year 2010 in a precinct, will essentially show a higher quatity of stop, question, and frisks in that precinct. 
+
+
+**Links for Ferguson information** 
+
+https://www.nytimes.com/interactive/2014/08/13/us/ferguson-missouri-town-under-siege-after-police-shooting.html
+https://en.wikipedia.org/wiki/Ferguson_unrest
 
 **Link for the 2011 file for variables in relation to the Stop-question-frisk analysis** 
 
