@@ -15,7 +15,8 @@ The following information will compare multiple variables (access data & methods
 summary(lm(stopdatablack$pct ~ stopdatayoung$pct, data = X2011_SQFData522))
 ``` 
 
-Regression equation -> Stopdatablack$pct = -2.608e-14 + 1.000e+00*stopdatayoung$pct
+Regression equation -> stopdatablack$pct = -2.608e-14 + 1.000e+00*stopdatayoung$pct
+
 
 
 
