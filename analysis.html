@@ -207,7 +207,8 @@ $(document).ready(function () {
 
 
 <p>The units of analysis for this dataset are by precinct.</p>
-<p>The following information will compare multiple variables (access data &amp; methods tab for more informaiton). The murder rates from 2010 data in all precincts in New York City will be analyzed against variables in 2011 in all precincts in New York City. <strong>Murder Rates in 2010 ~ Frisked in 2011, by precinct</strong></p>
+<p>The following information will compare multiple variables (access data &amp; methods tab for more informaiton). The murder rates from 2010 data in all precincts in New York City will be analyzed against variables in 2011 in all precincts in New York City.</p>
+<p><strong>Murder Rates in 2010 ~ Frisked in 2011, by precinct</strong></p>
 <p><strong>Persons below or equal to the age of 30 ~ Frisked in 2011</strong></p>
 <p><strong>Persons of African American race and the age of 30 or younger</strong></p>
 <pre class="r"><code>summary(lm(stopdatablack$pct ~ stopdatayoung$pct, data = X2011_SQFData522))</code></pre>
