@@ -4,23 +4,37 @@ title: "Analysis of the data"
 
 The units of analysis for this dataset are by precinct. 
 
-The following information will compare multiple variables (access data & methods tab for more informaiton). The murder rates from 2010 data in all precincts in New York City will be analyzed against variables in 2011 in all precincts in New York City. 
+The following information will compare multiple variables (access data & methods tab for more informaiton). The murder rates (and other crime rates) from 2010 data in all precincts in New York City will be analyzed against variables in 2011 in all precincts in New York City. 
 
 ```{r}
 summary(lm(stopdatablack$frisk ~ murderdata$`2010`))
 ```
+ 
+ 
+ 
+```{r}
+summary(lm(stopdatafemale$frisk ~ murderdata$`2010`))
+```
+
+
 
 ```{r}
 summary(lm(stopdatablack$frisk ~ murderdata$`2010` + robberydata$`2010`))
 ```
 
+
+
 ```{r}
 summary(lm(stopdatayoung$frisk ~ murderdata$`2010` + robberydata$`2010`))
 ```
 
+
+
 ```{r}
 summary(lm(stopdatablack$frisk ~ murderdata$`2010` + robberydata$`2010` + felonydata$`2010` ))
 ```
+
+
 
 ```{r}
 summary(lm(stopdatayoung$frisk ~ murderdata$`2010` + robberydata$`2010` + felonydata$`2010`))

@@ -173,7 +173,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Murder Correlation?</a>
+      <a class="navbar-brand" href="index.html">Crime Correlation?</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -207,7 +207,7 @@ $(document).ready(function () {
 
 
 <p>The units of analysis for this dataset are by precinct.</p>
-<p>The following information will compare multiple variables (access data &amp; methods tab for more informaiton). The murder rates from 2010 data in all precincts in New York City will be analyzed against variables in 2011 in all precincts in New York City.</p>
+<p>The following information will compare multiple variables (access data &amp; methods tab for more informaiton). The murder rates (and other crime rates) from 2010 data in all precincts in New York City will be analyzed against variables in 2011 in all precincts in New York City.</p>
 <pre class="r"><code>summary(lm(stopdatablack$frisk ~ murderdata$`2010`))</code></pre>
 <pre><code>## 
 ## Call:
@@ -227,6 +227,25 @@ $(document).ready(function () {
 ## Residual standard error: 2419 on 74 degrees of freedom
 ## Multiple R-squared:  0.7103, Adjusted R-squared:  0.7064 
 ## F-statistic: 181.4 on 1 and 74 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>summary(lm(stopdatafemale$frisk ~ murderdata$`2010`))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = stopdatafemale$frisk ~ murderdata$`2010`)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -506.6 -177.9  -59.8  111.5 1216.6 
+## 
+## Coefficients:
+##                   Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)        332.330     50.669   6.559 6.46e-09 ***
+## murderdata$`2010`   40.162      5.101   7.873 2.25e-11 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 311 on 74 degrees of freedom
+## Multiple R-squared:  0.4558, Adjusted R-squared:  0.4485 
+## F-statistic: 61.98 on 1 and 74 DF,  p-value: 2.251e-11</code></pre>
 <pre class="r"><code>summary(lm(stopdatablack$frisk ~ murderdata$`2010` + robberydata$`2010`))</code></pre>
 <pre><code>## 
 ## Call:
