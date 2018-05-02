@@ -6,19 +6,29 @@ The units of analysis for this dataset are by precinct.
 
 The following information will compare multiple variables (access data & methods tab for more informaiton). The murder rates from 2010 data in all precincts in New York City will be analyzed against variables in 2011 in all precincts in New York City. 
 
-**Murder Rates in 2010 ~ Frisked in 2011, by precinct** 
-
-
-**Persons below or equal to the age of 30 ~ Frisked in 2011** 
-
-
-**Persons of African American race and the age of 30 or younger** 
+```{r}
+summary(lm(stopdatablack$frisk ~ murderdata$`2010`))
+```
 
 ```{r}
-summary(lm(stopdatablack$pct ~ stopdatayoung$pct, data = X2011_SQFData522))
-``` 
+summary(lm(stopdatablack$frisk ~ murderdata$`2010` + robberydata$`2010`))
+```
 
-Regression equation -> stopdatablack$pct = -2.608e-14 + 1.000e+00*stopdatayoung$pct
+```{r}
+summary(lm(stopdatayoung$frisk ~ murderdata$`2010` + robberydata$`2010`))
+```
+
+```{r}
+summary(lm(stopdatablack$frisk ~ murderdata$`2010` + robberydata$`2010` + felonydata$`2010` ))
+```
+
+```{r}
+summary(lm(stopdatayoung$frisk ~ murderdata$`2010` + robberydata$`2010` + felonydata$`2010`))
+```
+
+
+
+
 
 
 

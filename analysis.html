@@ -208,31 +208,109 @@ $(document).ready(function () {
 
 <p>The units of analysis for this dataset are by precinct.</p>
 <p>The following information will compare multiple variables (access data &amp; methods tab for more informaiton). The murder rates from 2010 data in all precincts in New York City will be analyzed against variables in 2011 in all precincts in New York City.</p>
-<p><strong>Murder Rates in 2010 ~ Frisked in 2011, by precinct</strong></p>
-<p><strong>Persons below or equal to the age of 30 ~ Frisked in 2011</strong></p>
-<p><strong>Persons of African American race and the age of 30 or younger</strong></p>
-<pre class="r"><code>summary(lm(stopdatablack$pct ~ stopdatayoung$pct, data = X2011_SQFData522))</code></pre>
-<pre><code>## Warning in summary.lm(lm(stopdatablack$pct ~ stopdatayoung$pct, data =
-## X2011_SQFData522)): essentially perfect fit: summary may be unreliable</code></pre>
+<pre class="r"><code>summary(lm(stopdatablack$frisk ~ murderdata$`2010`))</code></pre>
 <pre><code>## 
 ## Call:
-## lm(formula = stopdatablack$pct ~ stopdatayoung$pct, data = X2011_SQFData522)
+## lm(formula = stopdatablack$frisk ~ murderdata$`2010`)
 ## 
 ## Residuals:
-##        Min         1Q     Median         3Q        Max 
-## -1.154e-13 -1.190e-16  1.513e-15  2.795e-15  1.847e-14 
+##     Min      1Q  Median      3Q     Max 
+## -4826.6 -1406.5  -373.9   819.2  6838.7 
 ## 
 ## Coefficients:
-##                     Estimate Std. Error    t value Pr(&gt;|t|)    
-## (Intercept)       -2.608e-14  3.256e-15 -8.011e+00 1.23e-11 ***
-## stopdatayoung$pct  1.000e+00  4.526e-17  2.210e+16  &lt; 2e-16 ***
+##                   Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)         846.89     393.98    2.15   0.0349 *  
+## murderdata$`2010`   534.29      39.66   13.47   &lt;2e-16 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Residual standard error: 1.401e-14 on 74 degrees of freedom
-## Multiple R-squared:      1,  Adjusted R-squared:      1 
-## F-statistic: 4.882e+32 on 1 and 74 DF,  p-value: &lt; 2.2e-16</code></pre>
-<p>Regression equation -&gt; stopdatablack<span class="math inline">\(pct = -2.608e-14 + 1.000e+00*stopdatayoung\)</span>pct</p>
+## Residual standard error: 2419 on 74 degrees of freedom
+## Multiple R-squared:  0.7103, Adjusted R-squared:  0.7064 
+## F-statistic: 181.4 on 1 and 74 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>summary(lm(stopdatablack$frisk ~ murderdata$`2010` + robberydata$`2010`))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = stopdatablack$frisk ~ murderdata$`2010` + robberydata$`2010`)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -4573.2 -1469.3  -282.4   838.6  6753.5 
+## 
+## Coefficients:
+##                    Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)         334.346    614.629   0.544    0.588    
+## murderdata$`2010`   478.330     65.015   7.357 2.25e-10 ***
+## robberydata$`2010`    3.538      3.259   1.086    0.281    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 2416 on 73 degrees of freedom
+## Multiple R-squared:  0.7149, Adjusted R-squared:  0.7071 
+## F-statistic: 91.53 on 2 and 73 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>summary(lm(stopdatayoung$frisk ~ murderdata$`2010` + robberydata$`2010`))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = stopdatayoung$frisk ~ murderdata$`2010` + robberydata$`2010`)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -5352.7 -1239.7  -583.1   773.3  7272.8 
+## 
+## Coefficients:
+##                    Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)         160.670    562.241   0.286   0.7759    
+## murderdata$`2010`   107.766     59.473   1.812   0.0741 .  
+## robberydata$`2010`   20.450      2.982   6.859  1.9e-09 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 2210 on 73 degrees of freedom
+## Multiple R-squared:  0.721,  Adjusted R-squared:  0.7133 
+## F-statistic: 94.31 on 2 and 73 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>summary(lm(stopdatablack$frisk ~ murderdata$`2010` + robberydata$`2010` + felonydata$`2010` ))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = stopdatablack$frisk ~ murderdata$`2010` + robberydata$`2010` + 
+##     felonydata$`2010`)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -4430.1 -1596.4  -377.9   878.6  6659.0 
+## 
+## Coefficients:
+##                    Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)         439.757    615.354   0.715    0.477    
+## murderdata$`2010`   434.193     71.937   6.036 6.26e-08 ***
+## robberydata$`2010`   -3.400      5.937  -0.573    0.569    
+## felonydata$`2010`     8.896      6.380   1.394    0.168    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 2400 on 72 degrees of freedom
+## Multiple R-squared:  0.7224, Adjusted R-squared:  0.7108 
+## F-statistic: 62.46 on 3 and 72 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>summary(lm(stopdatayoung$frisk ~ murderdata$`2010` + robberydata$`2010` + felonydata$`2010`))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = stopdatayoung$frisk ~ murderdata$`2010` + robberydata$`2010` + 
+##     felonydata$`2010`)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -6005.9 -1085.3  -435.1   831.9  7111.7 
+## 
+## Coefficients:
+##                    Estimate Std. Error t value Pr(&gt;|t|)   
+## (Intercept)         340.352    543.791   0.626  0.53337   
+## murderdata$`2010`    32.530     63.572   0.512  0.61043   
+## robberydata$`2010`    8.624      5.247   1.644  0.10461   
+## felonydata$`2010`    15.164      5.638   2.690  0.00889 **
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 2121 on 72 degrees of freedom
+## Multiple R-squared:  0.7464, Adjusted R-squared:  0.7359 
+## F-statistic: 70.65 on 3 and 72 DF,  p-value: &lt; 2.2e-16</code></pre>
 
 
 
