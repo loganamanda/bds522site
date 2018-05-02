@@ -2,6 +2,7 @@ murderdata <- MuderOffensesNYC[MuderOffensesNYC$CRIME == "MURDER & NON NEGL. MAN
 
 X2011_SQFData522$frisk <- X2011_SQFData522$frisked == "Y"
 friskeddata <- aggregate(frisk ~ pct, data = X2011_SQFData522, FUN = "sum")
+
 stopdata <- aggregate(frisk ~ pct, data = X2011_SQFData522, FUN = "length")
 
 
