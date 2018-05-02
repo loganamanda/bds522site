@@ -1,5 +1,5 @@
 ---
-  title: "Pets"
+  title: "Discussion & Conclusions"
 ---
   
   I love my dogs Callie and Luna.
