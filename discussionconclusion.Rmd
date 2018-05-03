@@ -30,6 +30,6 @@ This analysis looked at the amount of individuals that are the age of 30 or youn
 
 **Concluding Remarks** 
 
-Over the previous years the media coverage on racial discrimination by police officers has increased. But, there are also other factors which seem to show relevance for targeting in reference to this data analysis in terms for stops and frisks in New York City in 2010/2011. Comparisons of females, young adults, race, etc. can all be compared to crime rates of previous years which essentially can cause the increase of targeting in certain neighborhoods or areas. This could be correlational because the crimes are occuring in that area or the officers could be targeting assuming that persons who fit a particular suspect, are going to eventually commit a crime. 
+Over the previous years the media coverage on racial discrimination by police officers has increased. But, there are also other factors which seem to show relevance for targeting in reference to this data analysis in terms for stops and frisks in New York City in 2010/2011. Connections with females, young adults, race, etc. can be analyzed with crime rates of previous years which essentially can cause the increase of targeting in certain neighborhoods or areas. This could be correlational because the crimes are occuring in that area or the officers could be targeting assuming that persons who fit a particular suspect, are going to eventually commit a crime. 
 
 
