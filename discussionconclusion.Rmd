@@ -28,6 +28,11 @@ The analysis here compares three forms of crimes in 2010 with stopped African Am
 
 This analysis looked at the amount of individuals that are the age of 30 or younger, who were stopped/frisked in 2011 compared to the previous years crime data of murder, robbery, and felony assault rates. The results show that there was only one significant effect. This significance was only for felony assault rates and stopped young adults who were frisked. Essentially, this means that the rate of felony assaults in the year 2010, correlated with the amount of young adults (<=30) who were stopped/frisked in the year 2011 in New York City. 
 
+
+**Limitations to analysis** 
+
+The given analysis looked at two datasets which are available through the links which are given on the introduction page. A few limitations to this particular analysis would be time to explore more variables throughout the given data. Given more time, the analysis could be far greater and compare more variables against different crimes committed, different years, and potentially adding in whether the individual who was stopped, had a weapon on them or not. The list of other variables to include are far greater than which was analyzed. Another piece that may be looked at in the future, is the demographics and neighborhood areas which make up the individual precincts to compare those inferences to the actual numbers which are produced in the regressions. 
+
 **Concluding Remarks** 
 
 Over the previous years the media coverage on racial discrimination by police officers has increased. But, there are also other factors which seem to show relevance for targeting in reference to this data analysis in terms for stops and frisks in New York City in 2010/2011. Connections with females, young adults, race, etc. can be analyzed with crime rates of previous years which essentially can cause the increase of targeting in certain neighborhoods or areas. This could be correlational because the crimes are occuring in that area or the officers could be targeting assuming that persons who fit a particular suspect, are going to eventually commit a crime. 

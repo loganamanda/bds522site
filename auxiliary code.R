@@ -1,5 +1,18 @@
 * Race overall breakdown 
 
+A<-1
+B<-2
+I<-3
+P<-4
+Q<-5
+U<-6
+W<-7
+Z<-8
+
+RacePlot<- c(3.5,51.1,0.004,7.1,25.6,0.008,9,2.4)
+Racenames <- c(A,B,I,P,Q,U,W,Z)
+barplot(RacePlot, names.arg = Racenames, main = "Race Break Down", xlab = "Race", ylab = "Percentage")
+
 * Sex breakdown 
 
 M <- 1
@@ -10,6 +23,12 @@ Sexnames <- c(M,F,Z)
 barplot(SexPlot, names.arg = Sexnames, main = "Sex Break Down", xlab = "Sex", ylab = "Percentage")
 
 * Frisked plot 
+
+Y<-1
+N<-2
+FriskedPlot<- c(55.66,44.33)
+Friskednames <- c(Y,N)
+barplot(FriskedPlot, names.arg = Friskednames, main = "Frisked Break Down", xlab = "Frisked", ylab = "Percentage")
 
 
 * Murder rates 2010 all pct 
