@@ -1,16 +1,4 @@
 * Race overall breakdown 
-A <- 1
-B <- 2
-I <- 3
-P <- 4
-Q <- 5
-U <- 6 
-W <- 7 
-Z <- 8 
-  RacePlot <- c(3.5,51.1,0.004,7.1,25.6,0.008,9,2.4)
-  Racenames <- c(A,B,I,P,Q,U,W,Z)
-  barplot(RacePlot)
- barplot(RacePlot, names.arg = Racenames, main = "Race Break Down", xlab = "Race", ylab = "Percentage")
 
 * Sex breakdown 
 
@@ -23,14 +11,8 @@ barplot(SexPlot, names.arg = Sexnames, main = "Sex Break Down", xlab = "Sex", yl
 
 * Frisked plot 
 
-Y <- 1
-N <- 2 
- FriskedPlot <- c(55.7,44.3)
- Friskednames <- c(Y,N)
- barplot(FriskedPlot, names.arg = Friskednames, main = "Frisked Break Down", xlab = "Frisked", ylab = "Percentage")
 
 * Murder rates 2010 all pct 
-MurderRates2010ALLPCT <- c(2,1,1,1,4,2,3,0,0,3,1,1,0,5,2,13,2,6,7,8,4,4,14,5,13,14,14,1,12,23,5,10,5,11,10,6,7,2,0,26,1,9,7,10,7,28,33,2,20,1,12,17,13,3,6,2,0,1,6,5,15,4,15,5,4,2,7,4,0,1,19,9,3,13,N/A,2,2)
 Murder_precinct <- c(1,2,3)
 Murder_rate <- c(2,1,1)
 barplot(Murder_rate, names.arg = Murder_precinct)
@@ -38,7 +20,6 @@ barplot(Murder_rate, names.arg = Murder_precinct)
 barplot(MurderRates2010ALLPCT)
 barplot(MurderRates2010ALLPCT, main = "Murder Rates 2010 All Precincts", xlab = "Murder by Precinct", ylab = "Magnitude of Murder")
 
-summary(age)
 
 
 * Race by precinct: Black / White
